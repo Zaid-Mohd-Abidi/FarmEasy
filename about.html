@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- Main Wrapper Start -->
+<div id="main-wrapper" class="section">
+    
+       
+    <!-- Page Banner Section Start-->
+    <div class="page-banner-section section" style = background-image:url({{ url_for('static' , filename = "img/bg/page-bg.png") }} )>
+        <div class="container">
+            <div class="row">
+                
+                <!-- Page Title Start -->
+                <div class="page-title text-center col">
+                    <h1 style>About us</h1>
+                </div><!-- Page Title End -->
+                
+            </div>
+        </div>
+    </div><!-- Page Banner Section End-->
+    
+       
+    <!-- About Section Start-->
+    <div class="about-section section pt-120 pb-90">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                
+                <!-- About Image -->
+                <div class="about-image col-lg-6 col-12 mb-30">
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/iik25wqIuFo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Mission Content -->
+                <div class="about-content col-lg-6 col-12 mb-30">
+                    <h2>About <span>FarmEasy</span></h2>
+                    <p>The intention of this project is to create a portal for the farmers to connect with their customers directly so as to eradicate the disconnect caused by the system of middlemen and ultimately help and provide them a suffice ownership of their product. Also finding a way to help the farmers better crops according to their land condition and help find the plant's disease and recommending required treatment for it.</p>
+                    <a href={{ url_for('shop_page' )}} class="button">Shop Now</a>
+                </div>
+                
+            </div>
+        </div>
+    </div><!-- About Section End-->
+    
+    <!-- Team Section Start-->
+    <div class="team-section section pb-120">
+        <div class="container">
+           
+            <div class="row">
+                <div class="section-title text-center col mb-60">
+                    <h1>Our Team</h1>
+                </div>
+            </div>
+            
+            <div class="team-wrapper row">
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/1.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Zaid Mohd Abidi</h4>
+                        <span>Front End Developer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/2.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>R Visharad</h4>
+                        <span>Machine Learning and Backend Developer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/3.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Om Vithalkar</h4>
+                        <span>Backend Developer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/4.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Adarash Nag</h4>
+                        <span>Backend Developer</span>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="team-section section pb-120">
+        <div class="container">
+
+
+            <div class="team-wrapper row">
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/5.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Manu Vairagi</h4>
+                        <span>Frontend Developer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/6.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Vishakha</h4>
+                        <span>UI/UX and Content Writer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/12.jpg") }} alt="team">
+                    <div class="content">
+                        <h4>Bhuwan Jamdagni</h4>
+                        <span>Content Writer and Designer</span>
+                    </div>
+                </div>
+
+                <div class="single-team col-lg-3 col-md-6 col-12">
+                    <img src={{ url_for ('static', filename = "img/team/8.jpeg") }} alt="team">
+                    <div class="content">
+                        <h4>R Kuringi Selvan</h4>
+                        <span>UI/UX Designer</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    <!-- Team Section End-->
+    
+
+
+       
+    
+</div><!-- Main Wrapper End -->
+
+{% endblock %}
